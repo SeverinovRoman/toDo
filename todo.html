@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="todo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>ToDo приложение</title>
+</head>
+<body class=" page light-theme">
+    <div class="container">
+        <header>
+            <h1>ToDo приложение</h1>
+            <button class="change-theme" type="button">Изменить тему</button>
+        </header>
+        
+        <h2>Список задач на сегодня</h2>
+        <ul class="todo-list">
+            
+            <li class="default">Список дел пуст</li>
+            <!-- <li class="new-To-Do">
+                fsdsdf
+                <div class="li-buttons">
+                    <button type="button">Готово</button>
+                    <button type="button">Удалить</button>
+                </div>
+            </li> -->
+        </ul>
+        <form class="input-field">
+            <h3>Добавить новую задачу</h3>
+            <input type="text" name="case" class="input" placeholder="Текст задачи" required><br>
+            <button class="submit">Добавить</button>  
+        </form>
+
+    </div>
+    <script src="todo-change-theme.js"></script>
+    <script src="input-add-todo.js"></script>
+    
+</body>
+</html>

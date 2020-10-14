@@ -1,0 +1,236 @@
+
+/* Постоянные______________ */
+
+
+* {
+    box-sizing: border-box; /* Превращает блок в четко обозначенные границы ширины и высоты */
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto; /* Выравнивает основной блок по ширине */
+}
+
+header {
+    display: flex; /* ставит 2 блока в одну строку */
+    justify-content: space-between; /* ставит максимальное расстояние между двумя блоками */
+    align-items: center; /*  центрирует 2 моих блока между собой по вертикали, чтобы их  горизонтальные центры были на одной линии  */
+}
+
+h1 {
+    margin: 30px 0 0;
+}
+
+h2 {
+    margin: 10px 0 30px;
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 0;
+}
+span {
+    display: flex;
+    width: 300px;
+}
+.ready {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.li-buttons {
+    padding-right: 5px;
+}
+
+h3 {
+    margin: 10px 0 10px;
+}
+
+
+/*  Светлая тема______________ */
+
+.light-theme {
+    background-color: #7eddeb9d;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #02334a;
+}
+
+.light-theme .change-theme 
+{
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    color: #02334a;
+    margin-top: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    border: 1px solid#02334a;
+    border-radius: 5px;
+}
+
+.light-theme .change-theme:hover,
+.light-theme .submit:hover,
+.light-theme .li-buttons button:hover 
+  { /* При наведении меняет цвет шрифта и  */
+    background-color: #02334a;
+    color: white;
+} 
+
+
+.light-theme li {
+    display: flex; /* Внутри тега ЛИ содержимое и две кнопки ставит в одну линию */
+    justify-content: space-between; /* ставит расстояние между кнопками и содержимым */
+    align-items: center; /* Выставляет на одну линию кнопку и содержимое */
+    height: 50px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #02334a;
+    list-style-type: none; /* Убирает маркеры для тега ЛИ */
+    padding-left: 5px;
+    border-radius: 5px;
+} 
+
+.light-theme .li-buttons button {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    color: #02334a;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    border: 1px solid#02334a;
+    border-radius: 5px;
+}
+
+.light-theme .input-field {
+    border: 1px solid #02334a;
+    background-color:  white;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.light-theme input {
+    width: 95%;
+    margin-bottom: 10px;
+    height: 50px;
+    border: 1px solid #02334a;
+    border-radius: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #02334a;
+    padding-left: 5px;
+}
+
+.light-theme input::placeholder {
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgba(2, 51, 74, 0.5); 
+}
+
+.light-theme .submit {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    border: 1px solid #02334a;
+    border-radius: 5px;
+    background-color: white;
+    color: #02334a;
+}
+
+
+
+/* Темная тема______________ */
+
+.dark-theme {
+    background-color: #02334a;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #7edceb;
+}
+
+.dark-theme .change-theme {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    color: #7edceb;
+    margin-top: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    border: 1px solid #7edceb;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.dark-theme .change-theme:hover,
+.dark-theme .submit:hover,
+.dark-theme .li-buttons button:hover 
+  {
+    background-color: #7edceb;
+    color: #02334a;
+} 
+
+.dark-theme li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #7edceb;
+    list-style-type: none;
+    padding-left: 5px;
+    border-radius: 5px;
+} 
+
+.dark-theme .li-buttons button {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: #7edceb;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    border: 1px solid #7edceb;
+    border-radius: 5px;
+    
+}
+
+
+.dark-theme .input-field {
+    border: 1px solid #7edceb;
+    background-color:  white;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.dark-theme input {
+    width: 90%;
+    margin-bottom: 10px;
+    height: 50px;
+    border: 1px solid #7edceb;
+    border-radius: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #7edceb;
+    padding-left: 5px;
+}
+
+.dark-theme input::placeholder {
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #7eddeb50;
+    
+}
+
+.dark-theme .submit {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    border: 1px solid #7edceb;
+    border-radius: 5px;
+    background-color: white;
+    color: #7edceb;
+}
